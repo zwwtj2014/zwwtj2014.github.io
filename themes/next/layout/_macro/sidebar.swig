@@ -101,7 +101,7 @@
               {% for name, link in theme.social %}
                 <span class="links-of-author-item">
                   {% if theme.exturl && theme.social_icons.exturl %}
-                    <span class="exturl" data-url="{{ link.split('||')[0] | trim }}" title="{{ name }}">{#
+                    <span class="exturl" data-url="{{ link.split('||')[0] | trim }}" title="{{ name }}" >{#
                 #}{% else %}{#
                   #}<a href="{{ link.split('||')[0] | trim }}" target="_blank" title="{{ name }}"{% if theme.seo %} rel="external nofollow"{% endif %}>{#
                 #}{% endif %}{#
@@ -140,7 +140,7 @@
               <ul class="links-of-blogroll-list">
                 {% for name, link in theme.links %}
                   <li class="links-of-blogroll-item">
-                    <a href="{{ link }}" title="{{ name }}" target="_blank">{{ name }}</a>
+                    <a href="{{ link }}" title="{{ name }}" target="_blank" rel="external nofollow">{{ name }}</a>
                   </li>
                 {% endfor %}
               </ul>

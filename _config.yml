@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Clam's Blog
 subtitle:
-description:
+description: IT技术博客, 主要涉及前端领域, 后端主要涉猎nodejs
 author: clam
 language: zh-CN
 timezone:
@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://fdconsole.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
@@ -88,3 +88,10 @@ algolia:
   apiKey: 'b08f31ed5b97b295ef2fe616b71d2df2'
   indexName: 'hexo'
   chunkSize: 5000
+
+# SEO
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
