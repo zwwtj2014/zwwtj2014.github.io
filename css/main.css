@@ -1942,7 +1942,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8503;
+  background: #f7d7ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2959,4 +2959,7 @@ body {
   -webkit-box-shadow: 0 0 14px #cacbcb;
   -moz-box-shadow: 0 0 14px #cacbcb;
   background: #fff;
+}
+.footer-inner {
+  text-align: center;
 }
