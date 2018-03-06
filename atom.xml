@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fdconsole.com/"/>
-  <updated>2018-03-04T14:44:34.382Z</updated>
+  <updated>2018-03-06T14:08:58.743Z</updated>
   <id>http://fdconsole.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS数组：push vs concat</title>
+    <link href="http://fdconsole.com/JS%E6%95%B0%E7%BB%84%EF%BC%9Apush-vs-concat/"/>
+    <id>http://fdconsole.com/JS数组：push-vs-concat/</id>
+    <published>2018-03-06T14:07:12.000Z</published>
+    <updated>2018-03-06T14:08:58.743Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用JS这么久, 对于JS数组的相关方法一直都是拿来就用,对于<code>push</code>方法更是常用。但是在一次用到<code>contact</code>方法的时候自问了一句: <code>push</code>和<code>contact</code>到底有哪些区别?</p><p><strong>先看下MDN的定义:</strong></p><blockquote><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push" target="_blank" rel="noopener">【<code>push</code>】</a>:adds one or more elements to the end of an array and <strong>returns the new length</strong> of the array.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animals = [<span class="string">'pigs'</span>, <span class="string">'goats'</span>, <span class="string">'sheep'</span>];</span><br><span class="line"><span class="built_in">console</span>.log(animals.push(<span class="string">'cows'</span>)); <span class="comment">// expected output: 4</span></span><br><span class="line"><span class="built_in">console</span>.log(animals); <span class="comment">// expected output: Array ["pigs", "goats", "sheep", "cows"]</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">animals.push([<span class="string">'new arr'</span>]); <span class="comment">// expected output: 5</span></span><br><span class="line"><span class="built_in">console</span>.log(animals); <span class="comment">// expected output: Array ["pigs", "goats", "sheep", "cows", Array(1)]</span></span><br></pre></td></tr></table></figure></p></blockquote><blockquote><p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" target="_blank" rel="noopener">【<code>contact</code>】</a>:The <code>concat()</code> method is used to merge two or more arrays. This method <strong>does not change the existing arrays</strong>, but instead returns a new array.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> array1 = [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>];</span><br><span class="line"><span class="keyword">var</span> array2 = [<span class="string">'d'</span>, <span class="string">'e'</span>, <span class="string">'f'</span>];</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(array1.concat(array2)); <span class="comment">// expected output: Array ["a", "b", "c", "d", "e", "f"]</span></span><br><span class="line"><span class="built_in">console</span>.log(array1); <span class="comment">// expected output: Array ["a", "b", "c"]</span></span><br><span class="line"><span class="built_in">console</span>.log(array2); <span class="comment">// expected output: Array ["d", "e", "f"]</span></span><br></pre></td></tr></table></figure></p></blockquote><p><strong>摘取重点：</strong></p><ol><li><code>push</code>方法添加元素到数组末尾，改变的是同一个数组, 返回值是添加之后数组的长度</li><li><code>contact</code>方法是合并两个或者多个数组，不会改变存在的数组，返回的是合并的数组</li></ol><hr><p><strong>那性能会不会有区别?</strong></p><p>环境：win8.1 chrome 63.0.3239.132</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// push demo</span></span><br><span class="line"><span class="keyword">var</span> arr3 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> arr4 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>];</span><br><span class="line"><span class="built_in">console</span>.time(<span class="string">'push'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">10000</span>; index &gt; <span class="number">0</span>; index--) &#123;</span><br><span class="line">  arr3.push(...arr4);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.timeEnd(<span class="string">'push'</span>); <span class="comment">// push: 2.39892578125ms</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// contact demo</span></span><br><span class="line"><span class="keyword">var</span> arr1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> arr2 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>];</span><br><span class="line"><span class="built_in">console</span>.time(<span class="string">'contact'</span>);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index = <span class="number">10000</span>; index &gt; <span class="number">0</span>; index--) &#123;</span><br><span class="line">  arr1 = arr1.concat(arr2);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.timeEnd(<span class="string">'contact'</span>); <span class="comment">// contact: 312.762939453125ms</span></span><br></pre></td></tr></table></figure><p><strong>在我这个环境上push+解构的性能是要好于contact的。不过对于多个数组合并的时候, contact因为返回的是新数组，可以链式下去。</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      了解JS数组push和concat的区别
+    
+    </summary>
+    
+      <category term="JS基础" scheme="http://fdconsole.com/categories/JS%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="javascript" scheme="http://fdconsole.com/tags/javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>我为什么要搭这个博客</title>
