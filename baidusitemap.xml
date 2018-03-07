@@ -4,7 +4,29 @@
 
     
   <url>
-    <loc>http://fdconsole.com/JS%E6%95%B0%E7%BB%84%EF%BC%9Apush-vs-concat/</loc>
+    <loc>http://fdconsole.com/clam/2018/03/07/%E3%80%90webpack%E3%80%91-%E8%AE%B0%E4%B8%80%E6%AC%A1jsbundle%E4%BD%93%E7%A7%AF%E4%BC%98%E5%8C%96/</loc>
+    <lastmod>2018-03-07T12:19:31.658Z</lastmod>
+    <data>
+        <display>
+        <title>【webpack】: 记一次jsbundle体积优化</title>
+        <pubTime>2018-03-07T12:05:26.000Z</pubTime>
+        
+        <tag>webpack</tag>
+         
+        <tag>javascript</tag>
+         
+         
+           
+             
+              <breadCrumb title="webpack" url="http://fdconsole.com/clam/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://fdconsole.com/clam/2018/03/06/JS%E6%95%B0%E7%BB%84%EF%BC%9Apush-vs-concat/</loc>
     <lastmod>2018-03-07T12:14:30.459Z</lastmod>
     <data>
         <display>
@@ -16,7 +38,7 @@
          
            
              
-              <breadCrumb title="JS基础" url="http://fdconsole.com/categories/JS%E5%9F%BA%E7%A1%80/"/>
+              <breadCrumb title="JS基础" url="http://fdconsole.com/clam/categories/JS%E5%9F%BA%E7%A1%80/"/>
           
         </display>
     </data>
@@ -24,7 +46,7 @@
 
     
   <url>
-    <loc>http://fdconsole.com/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%AD%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>http://fdconsole.com/clam/2018/03/04/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%90%AD%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2018-03-07T12:14:27.340Z</lastmod>
     <data>
         <display>
@@ -36,29 +58,7 @@
          
            
              
-              <breadCrumb title="非技术" url="http://fdconsole.com/categories/%E9%9D%9E%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://fdconsole.com/%E3%80%90webpack%E3%80%91-%E8%AE%B0%E4%B8%80%E6%AC%A1jsbundle%E4%BD%93%E7%A7%AF%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2018-03-07T12:12:13.352Z</lastmod>
-    <data>
-        <display>
-        <title>【webpack】: 记一次jsbundle体积优化</title>
-        <pubTime>2018-03-07T12:05:26.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>webpack</tag>
-         
-         
-           
-             
-              <breadCrumb title="webpack" url="http://fdconsole.com/categories/webpack/"/>
+              <breadCrumb title="非技术" url="http://fdconsole.com/clam/categories/%E9%9D%9E%E6%8A%80%E6%9C%AF/"/>
           
         </display>
     </data>
