@@ -34,9 +34,9 @@
       <category term="webpack" scheme="http://fdconsole.com/categories/webpack/"/>
     
     
-      <category term="webpack" scheme="http://fdconsole.com/tags/webpack/"/>
-    
       <category term="javascript" scheme="http://fdconsole.com/tags/javascript/"/>
+    
+      <category term="webpack" scheme="http://fdconsole.com/tags/webpack/"/>
     
   </entry>
   
