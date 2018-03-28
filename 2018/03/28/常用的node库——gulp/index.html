@@ -107,20 +107,21 @@
 
 
   
-  <meta name="keywords" content="IT, Blog" />
+  <meta name="keywords" content="gulp,task,watch" />
 
 
-<meta name="description" content="个人信息 张巍巍 / 男 / 1992-9-25硕士 / 同济大学工作年限: 2年技术博客: http://www.fdconsole.comGithub: https://github.com/zwwtj2014期望职位: Web开发工程师期望城市: 南京 / 杭州 / 上海  工作经历技能清单 以下均为我使用的技能  前端框架：jquery / Angular / Vue后端开发：Node /">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://fdconsole.com/about/index.html">
+<meta name="description" content="gulp的基础和一些常用的使用场景列表">
+<meta name="keywords" content="gulp,task,watch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用的node库——gulp">
+<meta property="og:url" content="http://fdconsole.com/2018/03/28/常用的node库——gulp/index.html">
 <meta property="og:site_name" content="Clam&#39;s Blog">
-<meta property="og:description" content="个人信息 张巍巍 / 男 / 1992-9-25硕士 / 同济大学工作年限: 2年技术博客: http://www.fdconsole.comGithub: https://github.com/zwwtj2014期望职位: Web开发工程师期望城市: 南京 / 杭州 / 上海  工作经历技能清单 以下均为我使用的技能  前端框架：jquery / Angular / Vue后端开发：Node /">
+<meta property="og:description" content="gulp的基础和一些常用的使用场景列表">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-04T14:07:50.598Z">
+<meta property="og:updated_time" content="2018-03-28T14:35:26.092Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="个人信息 张巍巍 / 男 / 1992-9-25硕士 / 同济大学工作年限: 2年技术博客: http://www.fdconsole.comGithub: https://github.com/zwwtj2014期望职位: Web开发工程师期望城市: 南京 / 杭州 / 上海  工作经历技能清单 以下均为我使用的技能  前端框架：jquery / Angular / Vue后端开发：Node /">
+<meta name="twitter:title" content="常用的node库——gulp">
+<meta name="twitter:description" content="gulp的基础和一些常用的使用场景列表">
 
 
 
@@ -129,7 +130,7 @@
 
 
 
-  <link rel="canonical" href="http://fdconsole.com/about/"/>
+  <link rel="canonical" href="http://fdconsole.com/2018/03/28/常用的node库——gulp/"/>
 
 
 
@@ -138,7 +139,7 @@
     sidebar: "",
   };
 </script>
-  <title>about | Clam's Blog</title>
+  <title>常用的node库——gulp | Clam's Blog</title>
   
 
 
@@ -333,52 +334,278 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://fdconsole.com/2018/03/28/常用的node库——gulp/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="clam">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Clam's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">about</h2>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><blockquote>
-<p>张巍巍 / 男 / 1992-9-25<br>硕士 / 同济大学<br>工作年限: 2年<br>技术博客: <a href="http://www.fdconsole.com" target="_blank" rel="noopener">http://www.fdconsole.com</a><br>Github: <a href="https://github.com/zwwtj2014" target="_blank" rel="noopener">https://github.com/zwwtj2014</a><br>期望职位: Web开发工程师<br>期望城市: 南京 / 杭州 / 上海</p>
-</blockquote>
-<h1 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h1><h1 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h1><blockquote>
-<p>以下均为我使用的技能</p>
+          <h2 class="post-title" itemprop="name headline">常用的node库——gulp</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-28T22:32:48+08:00">2018-03-28</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/node/" itemprop="url" rel="index"><span itemprop="name">node</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/28/常用的node库——gulp/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/03/28/常用的node库——gulp/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">gulp的基础和一些常用的使用场景列表</div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>gulp是基于Node的前端构建工具。将源到目标的编译构建按照流的思想任务化，正如其官网所说，gulp让简单的任务简单，让复杂的任务可管理。</p>
+<h2 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h2><p><strong>1. 安装</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g gulp // 全局安装</span><br><span class="line">npm install -D gulp // 开发态依赖</span><br></pre></td></tr></table></figure>
+<p><strong>2. 使用</strong></p>
+<ul>
+<li><p>在项目根目录新建<code>gulpfile.js</code>，内容格式如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">'gulp'</span>);</span><br><span class="line">gulp.task(<span class="string">'default'</span>, ()=&gt;&#123;</span><br><span class="line">    <span class="comment">// 任务代码</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'default task'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">gulp // 执行gulpfile.js文件</span><br><span class="line">===&gt; default task</span><br><span class="line"></span><br><span class="line">gulp &lt;task&gt; &lt;othertask&gt; // 执行特定的任务</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="常用API"><a href="#常用API" class="headerlink" title="常用API"></a>常用API</h4><p><strong><code>gulp.task(name[,deps],fn)</code></strong></p>
 <blockquote>
-<p>前端框架：jquery / Angular / Vue<br>后端开发：Node / Java<br>前端工具: Webpack / Gulp / SaSS / LeSS<br>版本管理、文档和自动化部署工具: Git</p>
+<p>上文示例也可以看出来，该函数主要用于定义一个任务(task).</p>
+<blockquote>
+<p><strong>name：</strong>任务的名字</p>
+<p><strong>deps：</strong>列出在<strong>当前任务运行之前需要完成</strong>的任务列表</p>
+<p><strong>fn：</strong>该任务的具体操作逻辑</p>
 </blockquote>
 </blockquote>
+<p><strong><code>gulp.src(globs[,options])</code></strong></p>
+<blockquote>
+<p>输出符合模式(glob)或者匹配模式的数组的文件（<strong>其实和node-glob很像，都是汇聚符合某个glob的文件</strong>）</p>
+<p>这个收集到数据可以做流的源，通过<code>.pipe</code>方法流的方式对数据源进行处理。</p>
+<blockquote>
+<p><strong>globs：</strong>匹配的规则</p>
+<p><strong>options：</strong>配置项，是一个object类型</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; &gt; &#123;</span><br><span class="line">&gt; &gt;    buffer: boolean = <span class="literal">true</span>;<span class="comment">// 表示以buffer的形式返回文件内容，置成false则以stream的方式返回（大文件适用）。</span></span><br><span class="line">&gt; &gt;    read: boolean = <span class="literal">true</span>;<span class="comment">// 表示去读取文件内容，置成false则不读取返回空值</span></span><br><span class="line">&gt; &gt;    base: string; <span class="comment">// 查找的基准路径</span></span><br><span class="line">&gt; &gt; &#125;</span><br><span class="line">&gt; &gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+<p><strong><code>gulp.dest(path[,options])</code></strong></p>
+<blockquote>
+<p>看名字就知道其意思，<code>gulp.src</code>是数据流的开始，<code>gulp.dest</code>可以是数据流的结束，中间适用pipe连接。</p>
+<blockquote>
+<p><strong>path：</strong>string|Function; 可以是个字符串路径或者返回一个路径的函数</p>
+<p><strong>options：</strong>配置项，是一个object类型</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; &gt; &#123;</span><br><span class="line">&gt; &gt;     cwd: string = process.cwd(); <span class="comment">// 输出目录的cwd</span></span><br><span class="line">&gt; &gt;     mode: string = <span class="number">0777</span>; <span class="comment">// 定义所有在输出目录中所创建的目录的权限</span></span><br><span class="line">&gt; &gt; &#125;</span><br><span class="line">&gt; &gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>示例：</strong></p>
+<blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; &gt; <span class="comment">// 收集src的js文件, copy一份到build下, build目录没有回自动创建</span></span><br><span class="line">&gt; &gt; gulp.src(<span class="string">"src/**/*.js"</span>).pipe(gulp.dest(<span class="string">"build"</span>));</span><br><span class="line">&gt; &gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</blockquote>
+<p><strong><code>gulp.watch(glob[,opts], tasks)</code></strong></p>
+<blockquote>
+<p>监听文件，在符合glob规则的文件发生改动的时候执行一个或者多个<code>gulp.task</code>创建的task的名字</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="keyword">var</span> watcher = gulp.watch(<span class="string">'js/**/*.js'</span>, [<span class="string">'uglify'</span>,<span class="string">'reload'</span>]);</span><br><span class="line">&gt; watcher.on(<span class="string">'change'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">&gt;   <span class="built_in">console</span>.log(<span class="string">'File '</span> + event.path + <span class="string">' was '</span> + event.type + <span class="string">', running tasks...'</span>);</span><br><span class="line">&gt; &#125;);</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><strong><code>gulp.watch(glob[,opts,cb])</code></strong></p>
+<blockquote>
+<p>监听文件，在符合glob规则的文件发生改动的时候执行的callback</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; gulp.watch(<span class="string">'js/**/*.js'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">&gt;   <span class="built_in">console</span>.log(<span class="string">'File '</span> + event.path + <span class="string">' was '</span> + event.type + <span class="string">', running tasks...'</span>);</span><br><span class="line">&gt; &#125;);</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="场景收集"><a href="#场景收集" class="headerlink" title="场景收集"></a>场景收集</h2><ul>
+<li><p>待补充</p>
+<p>​</p>
+</li>
+</ul>
+<h2 id="相关资料"><a href="#相关资料" class="headerlink" title="相关资料"></a>相关资料</h2><p><a href="https://gulpjs.com/" target="_blank" rel="noopener">gulp官网</a></p>
+<p><a href="https://www.gulpjs.com.cn" target="_blank" rel="noopener">gulp中文网</a></p>
+<p><a href="https://github.com/gulpjs/gulp" target="_blank" rel="noopener">gulp github库</a></p>
 
-        
-      </div>
-      
-      
       
     </div>
+
     
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/node/" rel="tag"><i class="fa fa-tag"></i> node</a>
+          
+            <a href="/tags/gulp/" rel="tag"><i class="fa fa-tag"></i> gulp</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/07/【webpack】-记一次jsbundle体积优化/" rel="next" title="【webpack】: 记一次jsbundle体积优化">
+                <i class="fa fa-chevron-left"></i> 【webpack】: 记一次jsbundle体积优化
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
 
-    
-    
-    
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
   </div>
 
 
@@ -569,7 +796,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#个人信息"><span class="nav-number">1.</span> <span class="nav-text">个人信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#工作经历"><span class="nav-number">2.</span> <span class="nav-text">工作经历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#技能清单"><span class="nav-number">3.</span> <span class="nav-text">技能清单</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基础使用"><span class="nav-number">2.</span> <span class="nav-text">基础使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用API"><span class="nav-number">2.0.1.</span> <span class="nav-text">常用API</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#场景收集"><span class="nav-number">3.</span> <span class="nav-text">场景收集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关资料"><span class="nav-number">4.</span> <span class="nav-text">相关资料</span></a></li></ol></div>
             
 
           </div>
@@ -744,9 +971,9 @@
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://fdconsole.com/about/index.html';
-        this.page.identifier = 'about/index.html';
-        this.page.title = 'about';
+        this.page.url = 'http://fdconsole.com/2018/03/28/常用的node库——gulp/';
+        this.page.identifier = '2018/03/28/常用的node库——gulp/';
+        this.page.title = '常用的node库——gulp';
       };
       function loadComments () {
         var d = document, s = d.createElement('script');

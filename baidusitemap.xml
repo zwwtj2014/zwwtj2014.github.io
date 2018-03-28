@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://fdconsole.com/2018/03/28/%E5%B8%B8%E7%94%A8%E7%9A%84node%E5%BA%93%E2%80%94%E2%80%94gulp/</loc>
+    <lastmod>2018-03-28T14:35:26.092Z</lastmod>
+    <data>
+        <display>
+        <title>常用的node库——gulp</title>
+        <pubTime>2018-03-28T14:32:48.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>gulp</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="http://fdconsole.com/categories/node/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://fdconsole.com/2018/03/07/%E3%80%90webpack%E3%80%91-%E8%AE%B0%E4%B8%80%E6%AC%A1jsbundle%E4%BD%93%E7%A7%AF%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2018-03-07T12:19:31.658Z</lastmod>
     <data>
@@ -11,9 +33,9 @@
         <title>【webpack】: 记一次jsbundle体积优化</title>
         <pubTime>2018-03-07T12:05:26.000Z</pubTime>
         
-        <tag>javascript</tag>
-         
         <tag>webpack</tag>
+         
+        <tag>javascript</tag>
          
          
            
