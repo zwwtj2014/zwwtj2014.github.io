@@ -1,5 +1,6 @@
 function isWX() {
     var ua = navigator.userAgent.toLowerCase();
+    alert(ua);
     return ua.indexOf("micromessenger") > -1;
 }
 
@@ -28,7 +29,7 @@ function tip() {
 }
 
 window.onload = function() {
-    if (!isWX()) {
+    if (isWX()) {
         var winHeight = typeof window.innerHeight != "undefined" ? window.innerHeight : document.documentElement.clientHeight;
 
         var div = tip();
