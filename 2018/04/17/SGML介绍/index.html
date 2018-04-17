@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="Clam&#39;s Blog">
 <meta property="og:description" content="SGML是 Standard Generalized Markup Language 的缩写。这实际上有一点稍微的不合适，因为SGML实际上是一种元语言（meta-language），即用于编写标记语言的语言。像我们熟知的HTML，在H5以前的版本就是基于SGML的，还有XHTML，XML等。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-16T17:06:40.445Z">
+<meta property="og:updated_time" content="2018-04-17T14:32:45.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SGML介绍 (翻译)">
 <meta name="twitter:description" content="SGML是 Standard Generalized Markup Language 的缩写。这实际上有一点稍微的不合适，因为SGML实际上是一种元语言（meta-language），即用于编写标记语言的语言。像我们熟知的HTML，在H5以前的版本就是基于SGML的，还有XHTML，XML等。">
@@ -462,6 +462,45 @@
 <p>需要注意的是，实际上大多数的浏览器并没有使用SGML解释器，它们大多数都是通过文档的<code>DOCTYPE</code>声明或是否缺少声明来显示文档内容的。这算是给文档添加声明的好理由吧。(译者注: <code>DOCTYPE</code>指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令, HTML5不基于SGML, 所以H5的<code>DOCTYPE</code>不用公共标识符。)</p>
 <p>所以现在我们应该给文档都添加一个<code>DOCTYPE</code>，并且确保语法正确，并且使用正确的公共标识符，否则的话，校验器就会使用错误的DTD，或者根本找不到DTD，从而导致一系列无意义的错误。</p>
 <h3 id="我如何添加DOCTYPE声明？"><a href="#我如何添加DOCTYPE声明？" class="headerlink" title="我如何添加DOCTYPE声明？"></a>我如何添加DOCTYPE声明？</h3><p>可以参见W3C维护的DTD列表，详见 <a href="https://www.w3.org/QA/2002/04/valid-dtd-list.html" target="_blank" rel="noopener">DTD list</a></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">HTML版本 &amp; 模式</th>
+<th style="text-align:center">DTD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">HTML5 and beyond</td>
+<td style="text-align:center"><code>&lt;!DOCTYPE HTML&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">HTML4.01 &amp; Strict</td>
+<td style="text-align:center"><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;    &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">HTML4.01 &amp; Transitional</td>
+<td style="text-align:center"><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;    &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">HTML4.01 &amp; Frameset</td>
+<td style="text-align:center"><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Frameset//EN&quot;     &quot;http://www.w3.org/TR/html4/frameset.dtd&quot;&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">XHTML1.0 &amp; Strict</td>
+<td style="text-align:center"><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">XHTML1.0 &amp; Frameset</td>
+<td style="text-align:center"><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">XHTML1.0 &amp; Frameset</td>
+<td style="text-align:center"><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Frameset//EN&quot;   &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&quot;&gt;</code></td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
