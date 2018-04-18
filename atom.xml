@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fdconsole.com/"/>
-  <updated>2018-04-17T14:32:45.791Z</updated>
+  <updated>2018-04-18T13:24:39.405Z</updated>
   <id>http://fdconsole.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>html meta tag 基础</title>
+    <link href="http://fdconsole.com/2018/04/18/meta%E6%A0%87%E7%AD%BE%E5%9F%BA%E7%A1%80/"/>
+    <id>http://fdconsole.com/2018/04/18/meta标签基础/</id>
+    <published>2018-04-18T13:20:36.000Z</published>
+    <updated>2018-04-18T13:24:39.405Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h3><blockquote><p><strong>Metadata is data (information) about data.</strong></p><p>The <code>&lt;meta&gt;</code> tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.</p><p>Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.</p><p>The metadata can be used by browsers (how to display content or reload page), search engines (keywords), or other web services.</p></blockquote><h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p><strong>charset</strong></p><blockquote><p>此特性声明当前文档所使用的字符编码，但该声明可以被任何一个元素的 <strong>lang</strong> 特性的值覆盖</p><p><code>&lt;meta charset=&quot;utf-8&quot;&gt; //HTML5设定网页字符集的方式，推荐使用UTF-8</code></p></blockquote><p><strong>content</strong></p><blockquote><p>基于内容，这个属性为 <code>http-equiv</code> 或 <code>name</code> 属性提供了与其相关的值的定义.</p></blockquote><p><strong>http-equiv</strong></p><blockquote><p>这个枚举属性定义了能改变服务器和用户引擎行为的编译。相当于http的文件头作用。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; &lt;meta http-equiv="Content-Security-Policy" content="default-src https:"&gt; // 设定内容安全策略</span><br><span class="line">&gt;     </span><br><span class="line">&gt; &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/&gt; //指定IE和Chrome使用最新版本渲染当前页面</span><br><span class="line">&gt;</span><br><span class="line">&gt; &lt;meta http-equiv="expires" content="Wed Apr 18 2018 20:59:01 GMT+0800" /&gt; // 用于设定网页的到期时间，过期后网页必须到服务器上重新传输。</span><br><span class="line">&gt;     </span><br><span class="line">&gt; &lt;meta http-equiv="refresh" content="2;URL=http://fdconsole.com/"&gt; //意思是2秒后跳转向我的博客</span><br><span class="line">&gt;</span><br><span class="line">&gt; &lt;meta http-equiv="Set-Cookie" content="User=clam; path=/; expires=xxx"&gt; //已过时</span><br><span class="line">&gt;     </span><br><span class="line">&gt; &lt;meta http-equiv="content-Type" content="text/html;charset=utf-8"&gt;  //设定网页编码，已过时，推荐上文H5的方式</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></blockquote><p><strong>name</strong></p><blockquote><p>该属性定义文档级别元数据的名称。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&gt; &lt;meta name="application-name" content="fdconsole"&gt; // 定义正运行在该网页上的网络应用名称</span><br><span class="line">&gt;</span><br><span class="line">&gt; &lt;meta name="author" content="fdconsole"&gt; // 作者名称</span><br><span class="line">&gt;</span><br><span class="line">&gt; &lt;meta name="description" content="fdconsole"&gt; // 包含页面内容的简短和精确的描述</span><br><span class="line">&gt;     </span><br><span class="line">&gt; &lt;meta name="keywords" content="fdconsole,clam"&gt; // 网页的关键字</span><br><span class="line">&gt;     </span><br><span class="line">&gt; &lt;meta name="creator" content="clam"&gt; // 创建者，可以是机构的名称</span><br><span class="line">&gt;     </span><br><span class="line">&gt; &lt;meta name="robots" content="follow"&gt; // 告知搜索引擎的索引方式，用于SEO</span><br><span class="line">&gt;     </span><br><span class="line">&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt; // 提供有关视口初始大小的提示，仅供移动设备使用。</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></blockquote><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>其实meta常用的就那几个，很多细节还是需要仔细研究的， 比如SEO相关，cache相关，后续遇到再补充。</p><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://www.w3schools.com/tags/tag_meta.asp" target="_blank" rel="noopener">w3school HTML <meta> Tag</a></p><p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" rel="noopener">MDN <meta>: The Document-level Metadata element</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Metadata is data (information) about data.
+    
+    </summary>
+    
+      <category term="html" scheme="http://fdconsole.com/categories/html/"/>
+    
+    
+      <category term="html" scheme="http://fdconsole.com/tags/html/"/>
+    
+      <category term="meta" scheme="http://fdconsole.com/tags/meta/"/>
+    
+  </entry>
   
   <entry>
     <title>SGML介绍 (翻译)</title>
@@ -82,9 +106,9 @@
       <category term="webpack" scheme="http://fdconsole.com/categories/webpack/"/>
     
     
-      <category term="webpack" scheme="http://fdconsole.com/tags/webpack/"/>
-    
       <category term="javascript" scheme="http://fdconsole.com/tags/javascript/"/>
+    
+      <category term="webpack" scheme="http://fdconsole.com/tags/webpack/"/>
     
   </entry>
   

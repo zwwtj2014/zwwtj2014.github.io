@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://fdconsole.com/2018/04/18/meta%E6%A0%87%E7%AD%BE%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2018-04-18T13:24:39.405Z</lastmod>
+    <data>
+        <display>
+        <title>html meta tag 基础</title>
+        <pubTime>2018-04-18T13:20:36.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>meta</tag>
+         
+         
+           
+             
+              <breadCrumb title="html" url="http://fdconsole.com/categories/html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://fdconsole.com/2018/04/17/SGML%E4%BB%8B%E7%BB%8D/</loc>
     <lastmod>2018-04-17T14:32:45.791Z</lastmod>
     <data>
@@ -55,9 +77,9 @@
         <title>【webpack】: 记一次jsbundle体积优化</title>
         <pubTime>2018-03-07T12:05:26.000Z</pubTime>
         
-        <tag>webpack</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>webpack</tag>
          
          
            
