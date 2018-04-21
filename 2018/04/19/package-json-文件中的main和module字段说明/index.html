@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="Clam&#39;s Blog">
 <meta property="og:description" content="main字段表明的是包程序的主要入口。module是指向一个ESM的入口">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-19T14:41:02.766Z">
+<meta property="og:updated_time" content="2018-04-21T14:08:34.189Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="package.json 文件中的main和module字段说明">
 <meta name="twitter:description" content="main字段表明的是包程序的主要入口。module是指向一个ESM的入口">
@@ -467,6 +467,7 @@
 <blockquote>
 <p><code>pkg.module</code> will point to a module that has <em>ES2015 module syntax</em> but otherwise <em>only syntax features that the target environments support</em>.</p>
 </blockquote>
+<h3 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h3><p>这两个字段同时在一个包的时候，就可以实现同一个包有<strong>两个入口</strong>的场景。有时候做前后端串通的时候还是很有用的。</p>
 <h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://docs.npmjs.com/files/package.json#main" target="_blank" rel="noopener">package.json # main</a></p>
 <p><a href="https://github.com/rollup/rollup/wiki/pkg.module" target="_blank" rel="noopener">rollup # pkg.module</a></p>
 
@@ -758,7 +759,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#main"><span class="nav-number">1.</span> <span class="nav-text">main</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#module"><span class="nav-number">2.</span> <span class="nav-text">module</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#main"><span class="nav-number">1.</span> <span class="nav-text">main</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#module"><span class="nav-number">2.</span> <span class="nav-text">module</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实践"><span class="nav-number">3.</span> <span class="nav-text">实践</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>

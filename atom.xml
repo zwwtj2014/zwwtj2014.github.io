@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fdconsole.com/"/>
-  <updated>2018-04-19T14:41:02.766Z</updated>
+  <updated>2018-04-21T14:08:34.189Z</updated>
   <id>http://fdconsole.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://fdconsole.com/2018/04/19/package-json-%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84main%E5%92%8Cmodule%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E/"/>
     <id>http://fdconsole.com/2018/04/19/package-json-文件中的main和module字段说明/</id>
     <published>2018-04-19T14:34:59.000Z</published>
-    <updated>2018-04-19T14:41:02.766Z</updated>
+    <updated>2018-04-21T14:08:34.189Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="main"><a href="#main" class="headerlink" title="main"></a>main</h3><p>关于<code>main</code>，在npm的官网是有专门的说明的：</p><blockquote><p><strong>main</strong></p><p>The main field is a module ID that is the primary entry point to your program. That is, if your package is named <code>foo</code>, and a user installs it, and then does <code>require(&quot;foo&quot;)</code>, then your main module’s exports object will be returned.</p><p>This should be a module ID relative to the root of your package folder.</p><p>For most modules, it makes the most sense to have a main script and often not much else.</p></blockquote><p>翻译一下：main字段表明的是包程序的主要入口。比如你的包名是<code>foo</code>，然后用户install之后，通过<code>require(&#39;foo&#39;)</code>的方式引用你的包，然后<strong>node在resolve模块</strong>的时候找的就是main配置的文件。</p><p>通过<code>require</code>的方式引用应该很容易看出来，该字段主要是用于commonjs的。</p><h3 id="module"><a href="#module" class="headerlink" title="module"></a>module</h3><p>关于module，简单的说其实它是指向一个ESM的入口，比如使用<code>rollup</code>做tree shaking的时候，就需要使用该配置。</p><p>其实在rollup的wiki里有一篇专门说明该字段的文档，里面还说明了<code>jsnext:main</code>和<code>moudle</code>其实等价的，只是后者变为标准，所以后者用的比较多，而且比较直观。摘录一部分如下：</p><blockquote><p><code>pkg.module</code> will point to a module that has <em>ES2015 module syntax</em> but otherwise <em>only syntax features that the target environments support</em>.</p></blockquote><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://docs.npmjs.com/files/package.json#main" target="_blank" rel="noopener">package.json # main</a></p><p><a href="https://github.com/rollup/rollup/wiki/pkg.module" target="_blank" rel="noopener">rollup # pkg.module</a></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="main"><a href="#main" class="headerlink" title="main"></a>main</h3><p>关于<code>main</code>，在npm的官网是有专门的说明的：</p><blockquote><p><strong>main</strong></p><p>The main field is a module ID that is the primary entry point to your program. That is, if your package is named <code>foo</code>, and a user installs it, and then does <code>require(&quot;foo&quot;)</code>, then your main module’s exports object will be returned.</p><p>This should be a module ID relative to the root of your package folder.</p><p>For most modules, it makes the most sense to have a main script and often not much else.</p></blockquote><p>翻译一下：main字段表明的是包程序的主要入口。比如你的包名是<code>foo</code>，然后用户install之后，通过<code>require(&#39;foo&#39;)</code>的方式引用你的包，然后<strong>node在resolve模块</strong>的时候找的就是main配置的文件。</p><p>通过<code>require</code>的方式引用应该很容易看出来，该字段主要是用于commonjs的。</p><h3 id="module"><a href="#module" class="headerlink" title="module"></a>module</h3><p>关于module，简单的说其实它是指向一个ESM的入口，比如使用<code>rollup</code>做tree shaking的时候，就需要使用该配置。</p><p>其实在rollup的wiki里有一篇专门说明该字段的文档，里面还说明了<code>jsnext:main</code>和<code>moudle</code>其实等价的，只是后者变为标准，所以后者用的比较多，而且比较直观。摘录一部分如下：</p><blockquote><p><code>pkg.module</code> will point to a module that has <em>ES2015 module syntax</em> but otherwise <em>only syntax features that the target environments support</em>.</p></blockquote><h3 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h3><p>这两个字段同时在一个包的时候，就可以实现同一个包有<strong>两个入口</strong>的场景。有时候做前后端串通的时候还是很有用的。</p><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://docs.npmjs.com/files/package.json#main" target="_blank" rel="noopener">package.json # main</a></p><p><a href="https://github.com/rollup/rollup/wiki/pkg.module" target="_blank" rel="noopener">rollup # pkg.module</a></p>]]></content>
     
     <summary type="html">
     
@@ -130,9 +130,9 @@
       <category term="webpack" scheme="http://fdconsole.com/categories/webpack/"/>
     
     
-      <category term="webpack" scheme="http://fdconsole.com/tags/webpack/"/>
-    
       <category term="javascript" scheme="http://fdconsole.com/tags/javascript/"/>
+    
+      <category term="webpack" scheme="http://fdconsole.com/tags/webpack/"/>
     
   </entry>
   

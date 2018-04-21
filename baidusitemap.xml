@@ -3,10 +3,9 @@
 
 
     
-    
   <url>
     <loc>http://fdconsole.com/2018/04/19/package-json-%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84main%E5%92%8Cmodule%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E/</loc>
-    <lastmod>2018-04-19T14:41:02.766Z</lastmod>
+    <lastmod>2018-04-21T14:08:34.189Z</lastmod>
     <data>
         <display>
         <title>package.json 文件中的main和module字段说明</title>
@@ -25,6 +24,7 @@
     </data>
     </url>
 
+    
     
   <url>
     <loc>http://fdconsole.com/2018/04/18/meta%E6%A0%87%E7%AD%BE%E5%9F%BA%E7%A1%80/</loc>
@@ -100,9 +100,9 @@
         <title>【webpack】: 记一次jsbundle体积优化</title>
         <pubTime>2018-03-07T12:05:26.000Z</pubTime>
         
-        <tag>webpack</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>webpack</tag>
          
          
            
