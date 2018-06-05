@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fdconsole.com/"/>
-  <updated>2018-04-21T14:08:34.189Z</updated>
+  <updated>2018-06-05T15:17:06.599Z</updated>
   <id>http://fdconsole.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>node模块 —— 实现功能组织和重用</title>
+    <link href="http://fdconsole.com/2018/06/05/node%E6%A8%A1%E5%9D%97-%E2%80%94%E2%80%94-%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD%E7%BB%84%E7%BB%87%E5%92%8C%E9%87%8D%E7%94%A8/"/>
+    <id>http://fdconsole.com/2018/06/05/node模块-——-实现功能组织和重用/</id>
+    <published>2018-06-05T15:14:27.000Z</published>
+    <updated>2018-06-05T15:17:06.599Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Node的模块"><a href="#Node的模块" class="headerlink" title="Node的模块"></a>Node的模块</h2><p>Node是通过模块(module) 的概念来实现功能的组织和重用的。Node模块允许你从被引入文件中选择要暴露给程序的函数和变量，主要是通过<code>require</code>和<code>exports</code>两个关键字。<strong>如果模块返回的函数或变量不止一个，那它可以通过设定<code>exports对象</code>的属性来指明它们。但是如果模块只返回一个函数或变量。则可以设定<code>module.exports</code>属性</strong>。</p><h4 id="同步IO的require"><a href="#同步IO的require" class="headerlink" title="同步IO的require"></a>同步IO的<code>require</code></h4><p>require在node中被设计成了同步I/O，因为在服务器端文件一般都是存放在本地磁盘上，所以性能是OK的。但是在IO密集的地方还是要注意尽量不要使用，所以在使用commonjs的时候要慎重，所有的同步都会阻塞注进程。</p><h4 id="exports对象-VS-module-exports"><a href="#exports对象-VS-module-exports" class="headerlink" title="exports对象 VS module.exports"></a><code>exports对象</code> VS <code>module.exports</code></h4><p>要明白在程序中最终导出的<code>module.exports</code>，<strong>与<code>require</code>对接的也是<code>module.exports</code></strong>。你可以认为<code>exports</code>只是对<code>module.exports</code>的一个全局引用，最初被定义成一个可以添加属性的空对象。简单理解：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> exports = <span class="built_in">module</span>.exports;</span><br><span class="line">exports.myFunc === <span class="built_in">module</span>.exports.myFunc; <span class="comment">// 相等</span></span><br></pre></td></tr></table></figure><p>对于上述代码无论怎么给exports设置属性<code>exports.xxx</code>都是OK的，因为它和<code>module.exports</code>引用的同一块地址，但是如果<code>exports = {xxx}</code>就会改变<code>exports</code>的指向，不管给它设置啥值，在<code>module.exports</code>都是感知不到的，进而<code>require</code>就感知不到我们想导出的任何方法。</p><p><strong>所以我们说，多个导出值时可以使用exports属性的方法，耽搁函数变量的时候可以使用<code>module.exports</code>。</strong></p><h4 id="node-modules"><a href="#node-modules" class="headerlink" title="node_modules"></a>node_modules</h4><p>node中有一个独特的模块引入机制，可以不用知道模块在文件系统的具体位置。这个机制就是<strong>node_modules</strong>目。这个机制对于模块重用非常有用，可以大大的减轻用户对依赖的文件的路径管理，只需要知道依赖的包名。正因为其非常易用，导致现在对于滥用的情况，即著名的node_modules黑洞。在最近ry大神介绍deno项目时也提到了这一点。</p><p><strong>查找步骤：</strong></p><blockquote><ol><li>查找的模块时<strong>核心模块</strong>吗？是的话直接返回，不是进入步骤2；</li><li>模块在<strong>当前目录下的node_modules目录</strong>下吗？在的话直接返回，否则进入步骤3；</li><li>尝试进入父目录；</li><li>父目录存在吗？存在的话返回步骤2循环，不存在进入步骤5；</li><li>模块在由环境变量<strong>NODE_PATH</strong>指定的目录下吗？在的话返回，否则进入步骤6；</li><li>抛出异常；</li></ol></blockquote><h4 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h4><ul><li>如果模块时目录，在模块目录中定义模块的文件必须被命令index.js，除非在这个目录的一个叫<code>package.json</code>的文件中通过main字段特别指明</li><li>Node能把模块作为对象缓存起来，这与如果两个文件引入相同的模块，第一个文件会把模块返回的数据存到程序的内存中，这与第二个文件就不用再去访问和计算模块的源文件了。<strong>（注意：在这里第二个引入其实是有机会改缓存的数据的）</strong></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      Node是通过模块(module) 的概念来实现功能的组织和重用的。Node模块允许你从被引入文件中选择要暴露给程序的函数和变量，主要是通过`require`和`exports`两个关键字。
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://fdconsole.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="node实战" scheme="http://fdconsole.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/node%E5%AE%9E%E6%88%98/"/>
+    
+    
+      <category term="读书" scheme="http://fdconsole.com/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>package.json 文件中的main和module字段说明</title>
@@ -130,9 +154,9 @@
       <category term="webpack" scheme="http://fdconsole.com/categories/webpack/"/>
     
     
-      <category term="javascript" scheme="http://fdconsole.com/tags/javascript/"/>
-    
       <category term="webpack" scheme="http://fdconsole.com/tags/webpack/"/>
+    
+      <category term="javascript" scheme="http://fdconsole.com/tags/javascript/"/>
     
   </entry>
   

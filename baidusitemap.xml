@@ -4,6 +4,29 @@
 
     
   <url>
+    <loc>http://fdconsole.com/2018/06/05/node%E6%A8%A1%E5%9D%97-%E2%80%94%E2%80%94-%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD%E7%BB%84%E7%BB%87%E5%92%8C%E9%87%8D%E7%94%A8/</loc>
+    <lastmod>2018-06-05T15:17:06.599Z</lastmod>
+    <data>
+        <display>
+        <title>node模块 —— 实现功能组织和重用</title>
+        <pubTime>2018-06-05T15:14:27.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+         
+           
+             
+              <breadCrumb title="读书笔记" url="http://fdconsole.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+          
+             
+              <breadCrumb title="node实战" url="http://fdconsole.com/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/node%E5%AE%9E%E6%88%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://fdconsole.com/2018/04/19/package-json-%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84main%E5%92%8Cmodule%E5%AD%97%E6%AE%B5%E8%AF%B4%E6%98%8E/</loc>
     <lastmod>2018-04-21T14:08:34.189Z</lastmod>
     <data>
@@ -100,9 +123,9 @@
         <title>【webpack】: 记一次jsbundle体积优化</title>
         <pubTime>2018-03-07T12:05:26.000Z</pubTime>
         
-        <tag>javascript</tag>
-         
         <tag>webpack</tag>
+         
+        <tag>javascript</tag>
          
          
            

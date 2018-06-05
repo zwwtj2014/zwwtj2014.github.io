@@ -107,20 +107,21 @@
 
 
   
-  <meta name="keywords" content="IT, Blog" />
+  <meta name="keywords" content="node,module,exports,require" />
 
 
-<meta name="description" content="个人信息 clam / 男 / 1992-9-25硕士 / 同济大学工作年限: 2年邮箱：coderzww@gmail.com技术博客: http://www.fdconsole.comGithub: https://github.com/zwwtj2014期望职位: Web开发工程师期望城市: 南京 / 杭州 / 上海  工作经历 2016~至今 华为 web开发工程师  项目经历 Web前端框">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ABOUT ME">
-<meta property="og:url" content="http://fdconsole.com/about/index.html">
+<meta name="description" content="Node是通过模块(module) 的概念来实现功能的组织和重用的。Node模块允许你从被引入文件中选择要暴露给程序的函数和变量，主要是通过`require`和`exports`两个关键字。">
+<meta name="keywords" content="node,module,exports,require">
+<meta property="og:type" content="article">
+<meta property="og:title" content="node模块 —— 实现功能组织和重用">
+<meta property="og:url" content="http://fdconsole.com/2018/06/05/node模块-——-实现功能组织和重用/index.html">
 <meta property="og:site_name" content="Clam&#39;s Blog">
-<meta property="og:description" content="个人信息 clam / 男 / 1992-9-25硕士 / 同济大学工作年限: 2年邮箱：coderzww@gmail.com技术博客: http://www.fdconsole.comGithub: https://github.com/zwwtj2014期望职位: Web开发工程师期望城市: 南京 / 杭州 / 上海  工作经历 2016~至今 华为 web开发工程师  项目经历 Web前端框">
+<meta property="og:description" content="Node是通过模块(module) 的概念来实现功能的组织和重用的。Node模块允许你从被引入文件中选择要暴露给程序的函数和变量，主要是通过`require`和`exports`两个关键字。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-19T14:50:07.558Z">
+<meta property="og:updated_time" content="2018-06-05T15:17:06.599Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ABOUT ME">
-<meta name="twitter:description" content="个人信息 clam / 男 / 1992-9-25硕士 / 同济大学工作年限: 2年邮箱：coderzww@gmail.com技术博客: http://www.fdconsole.comGithub: https://github.com/zwwtj2014期望职位: Web开发工程师期望城市: 南京 / 杭州 / 上海  工作经历 2016~至今 华为 web开发工程师  项目经历 Web前端框">
+<meta name="twitter:title" content="node模块 —— 实现功能组织和重用">
+<meta name="twitter:description" content="Node是通过模块(module) 的概念来实现功能的组织和重用的。Node模块允许你从被引入文件中选择要暴露给程序的函数和变量，主要是通过`require`和`exports`两个关键字。">
 
 
 
@@ -129,7 +130,7 @@
 
 
 
-  <link rel="canonical" href="http://fdconsole.com/about/"/>
+  <link rel="canonical" href="http://fdconsole.com/2018/06/05/node模块-——-实现功能组织和重用/"/>
 
 
 
@@ -138,7 +139,7 @@
     sidebar: "",
   };
 </script>
-  <title>ABOUT ME | Clam's Blog</title>
+  <title>node模块 —— 实现功能组织和重用 | Clam's Blog</title>
   
 
 
@@ -333,72 +334,241 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://fdconsole.com/2018/06/05/node模块-——-实现功能组织和重用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="clam">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Clam's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">ABOUT ME</h2>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <h1 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h1><blockquote>
-<p>clam / 男 / 1992-9-25<br>硕士 / 同济大学<br>工作年限: 2年<br>邮箱：<a href="mailto:coderzww@gmail.com" target="_blank" rel="noopener">coderzww@gmail.com</a><br>技术博客: <a href="http://www.fdconsole.com" target="_blank" rel="noopener">http://www.fdconsole.com</a><br>Github: <a href="https://github.com/zwwtj2014" target="_blank" rel="noopener">https://github.com/zwwtj2014</a><br>期望职位: Web开发工程师<br>期望城市: 南京 / 杭州 / 上海</p>
-</blockquote>
-<h1 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h1><blockquote>
-<p>2016~至今 华为 web开发工程师</p>
-</blockquote>
-<h1 id="项目经历"><a href="#项目经历" class="headerlink" title="项目经历"></a>项目经历</h1><blockquote>
-<p>Web前端框架</p>
-<blockquote>
-<p>此项目是一套web框架，基于angular1.x封装一套DSL指令。 后基于此框架糅合了ts(es6)的一些能力，提供了类angular2注解,component的语法糖。</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<p>模型驱动UI (前端元数据化)</p>
-<blockquote>
-<p>通过手写或者可视化工具拖拽生成UI元数据，配合元数据转换工具，最终生成可运行的UI dom</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>元数据转换工具 : 前端元数据(xml)转成可消费的JSON格式的meta, 再通过webpack进行构建打包, 生成对应的bundle</p>
-</blockquote>
-</blockquote>
-<h1 id="技能清单"><a href="#技能清单" class="headerlink" title="技能清单"></a>技能清单</h1><blockquote>
-<p>以下均为我使用的技能</p>
-<blockquote>
-<p>语言：html/js/css/ts/node<br>前端框架：jquery / Angularjs / Vue / Less<br>后端框架：Express<br>构建工具: Webpack / gulp<br>版本管理、文档和自动化部署工具: Git</p>
-</blockquote>
-</blockquote>
-
+          <h2 class="post-title" itemprop="name headline">node模块 —— 实现功能组织和重用</h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-05T23:14:27+08:00">2018-06-05</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/读书笔记/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a></span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/读书笔记/node实战/" itemprop="url" rel="index"><span itemprop="name">node实战</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/05/node模块-——-实现功能组织和重用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/06/05/node模块-——-实现功能组织和重用/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">Node是通过模块(module) 的概念来实现功能的组织和重用的。Node模块允许你从被引入文件中选择要暴露给程序的函数和变量，主要是通过`require`和`exports`两个关键字。</div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="Node的模块"><a href="#Node的模块" class="headerlink" title="Node的模块"></a>Node的模块</h2><p>Node是通过模块(module) 的概念来实现功能的组织和重用的。Node模块允许你从被引入文件中选择要暴露给程序的函数和变量，主要是通过<code>require</code>和<code>exports</code>两个关键字。<strong>如果模块返回的函数或变量不止一个，那它可以通过设定<code>exports对象</code>的属性来指明它们。但是如果模块只返回一个函数或变量。则可以设定<code>module.exports</code>属性</strong>。</p>
+<h4 id="同步IO的require"><a href="#同步IO的require" class="headerlink" title="同步IO的require"></a>同步IO的<code>require</code></h4><p>require在node中被设计成了同步I/O，因为在服务器端文件一般都是存放在本地磁盘上，所以性能是OK的。但是在IO密集的地方还是要注意尽量不要使用，所以在使用commonjs的时候要慎重，所有的同步都会阻塞注进程。</p>
+<h4 id="exports对象-VS-module-exports"><a href="#exports对象-VS-module-exports" class="headerlink" title="exports对象 VS module.exports"></a><code>exports对象</code> VS <code>module.exports</code></h4><p>要明白在程序中最终导出的<code>module.exports</code>，<strong>与<code>require</code>对接的也是<code>module.exports</code></strong>。你可以认为<code>exports</code>只是对<code>module.exports</code>的一个全局引用，最初被定义成一个可以添加属性的空对象。简单理解：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> exports = <span class="built_in">module</span>.exports;</span><br><span class="line">exports.myFunc === <span class="built_in">module</span>.exports.myFunc; <span class="comment">// 相等</span></span><br></pre></td></tr></table></figure>
+<p>对于上述代码无论怎么给exports设置属性<code>exports.xxx</code>都是OK的，因为它和<code>module.exports</code>引用的同一块地址，但是如果<code>exports = {xxx}</code>就会改变<code>exports</code>的指向，不管给它设置啥值，在<code>module.exports</code>都是感知不到的，进而<code>require</code>就感知不到我们想导出的任何方法。</p>
+<p><strong>所以我们说，多个导出值时可以使用exports属性的方法，耽搁函数变量的时候可以使用<code>module.exports</code>。</strong></p>
+<h4 id="node-modules"><a href="#node-modules" class="headerlink" title="node_modules"></a>node_modules</h4><p>node中有一个独特的模块引入机制，可以不用知道模块在文件系统的具体位置。这个机制就是<strong>node_modules</strong>目。这个机制对于模块重用非常有用，可以大大的减轻用户对依赖的文件的路径管理，只需要知道依赖的包名。正因为其非常易用，导致现在对于滥用的情况，即著名的node_modules黑洞。在最近ry大神介绍deno项目时也提到了这一点。</p>
+<p><strong>查找步骤：</strong></p>
+<blockquote>
+<ol>
+<li>查找的模块时<strong>核心模块</strong>吗？是的话直接返回，不是进入步骤2；</li>
+<li>模块在<strong>当前目录下的node_modules目录</strong>下吗？在的话直接返回，否则进入步骤3；</li>
+<li>尝试进入父目录；</li>
+<li>父目录存在吗？存在的话返回步骤2循环，不存在进入步骤5；</li>
+<li>模块在由环境变量<strong>NODE_PATH</strong>指定的目录下吗？在的话返回，否则进入步骤6；</li>
+<li>抛出异常；</li>
+</ol>
+</blockquote>
+<h4 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h4><ul>
+<li>如果模块时目录，在模块目录中定义模块的文件必须被命令index.js，除非在这个目录的一个叫<code>package.json</code>的文件中通过main字段特别指明</li>
+<li>Node能把模块作为对象缓存起来，这与如果两个文件引入相同的模块，第一个文件会把模块返回的数据存到程序的内存中，这与第二个文件就不用再去访问和计算模块的源文件了。<strong>（注意：在这里第二个引入其实是有机会改缓存的数据的）</strong></li>
+</ul>
+
       
     </div>
+
     
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/读书/" rel="tag"><i class="fa fa-tag"></i> 读书</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/19/package-json-文件中的main和module字段说明/" rel="next" title="package.json 文件中的main和module字段说明">
+                <i class="fa fa-chevron-left"></i> package.json 文件中的main和module字段说明
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
 
-    
-    
-    
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
   </div>
 
 
@@ -605,7 +775,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#个人信息"><span class="nav-number">1.</span> <span class="nav-text">个人信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#工作经历"><span class="nav-number">2.</span> <span class="nav-text">工作经历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目经历"><span class="nav-number">3.</span> <span class="nav-text">项目经历</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#技能清单"><span class="nav-number">4.</span> <span class="nav-text">技能清单</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Node的模块"><span class="nav-number">1.</span> <span class="nav-text">Node的模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#同步IO的require"><span class="nav-number">1.0.1.</span> <span class="nav-text">同步IO的require</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#exports对象-VS-module-exports"><span class="nav-number">1.0.2.</span> <span class="nav-text">exports对象 VS module.exports</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#node-modules"><span class="nav-number">1.0.3.</span> <span class="nav-text">node_modules</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意点"><span class="nav-number">1.0.4.</span> <span class="nav-text">注意点</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -780,9 +950,9 @@
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://fdconsole.com/about/index.html';
-        this.page.identifier = 'about/index.html';
-        this.page.title = 'ABOUT ME';
+        this.page.url = 'http://fdconsole.com/2018/06/05/node模块-——-实现功能组织和重用/';
+        this.page.identifier = '2018/06/05/node模块-——-实现功能组织和重用/';
+        this.page.title = 'node模块 —— 实现功能组织和重用';
       };
       function loadComments () {
         var d = document, s = d.createElement('script');
