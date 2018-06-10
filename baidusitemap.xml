@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://fdconsole.com/2018/06/10/%E8%AF%BB%E6%BA%90%E7%A0%81%E4%B9%8BConnect-v3.6.7/</loc>
+    <lastmod>2018-06-10T13:23:01.998Z</lastmod>
+    <data>
+        <display>
+        <title>读源码之Connect-v3.6.7</title>
+        <pubTime>2018-06-10T13:17:18.000Z</pubTime>
+        
+        <tag>读源码</tag>
+         
+        <tag>Connect</tag>
+         
+         
+           
+             
+              <breadCrumb title="读源码" url="http://fdconsole.com/categories/%E8%AF%BB%E6%BA%90%E7%A0%81/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://fdconsole.com/2018/06/05/node%E6%A8%A1%E5%9D%97-%E2%80%94%E2%80%94-%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD%E7%BB%84%E7%BB%87%E5%92%8C%E9%87%8D%E7%94%A8/</loc>
     <lastmod>2018-06-05T15:17:06.599Z</lastmod>
     <data>
@@ -123,9 +145,9 @@
         <title>【webpack】: 记一次jsbundle体积优化</title>
         <pubTime>2018-03-07T12:05:26.000Z</pubTime>
         
-        <tag>webpack</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>webpack</tag>
          
          
            
