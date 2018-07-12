@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>http://fdconsole.com/2018/07/13/vue%E4%B8%AD%E7%9A%84flowtype-js%E9%9D%99%E6%80%81%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2018-07-12T17:14:56.469Z</lastmod>
+    <data>
+        <display>
+        <title>vue中的flowtype--js静态类型检查工具</title>
+        <pubTime>2018-07-12T17:11:16.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>flow</tag>
+         
+         
+           
+             
+              <breadCrumb title="ES" url="http://fdconsole.com/categories/ES/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://fdconsole.com/2018/06/10/%E8%AF%BB%E6%BA%90%E7%A0%81%E4%B9%8BConnect-v3.6.7/</loc>
@@ -57,9 +79,9 @@
         <title>package.json 文件中的main和module字段说明</title>
         <pubTime>2018-04-19T14:34:59.000Z</pubTime>
         
-        <tag>javascript</tag>
-         
         <tag>node</tag>
+         
+        <tag>javascript</tag>
          
          
            
@@ -145,9 +167,9 @@
         <title>【webpack】: 记一次jsbundle体积优化</title>
         <pubTime>2018-03-07T12:05:26.000Z</pubTime>
         
-        <tag>javascript</tag>
-         
         <tag>webpack</tag>
+         
+        <tag>javascript</tag>
          
          
            
