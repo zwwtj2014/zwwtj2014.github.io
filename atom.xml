@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fdconsole.com/"/>
-  <updated>2018-07-12T17:29:37.915Z</updated>
+  <updated>2018-07-18T15:34:40.417Z</updated>
   <id>http://fdconsole.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决github clone和push过慢的问题</title>
+    <link href="http://fdconsole.com/2018/07/18/%E8%A7%A3%E5%86%B3github-clone%E5%92%8Cpush%E8%BF%87%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://fdconsole.com/2018/07/18/解决github-clone和push过慢的问题/</id>
+    <published>2018-07-18T15:33:55.000Z</published>
+    <updated>2018-07-18T15:34:40.417Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近发现在使用git clone和push代码的时候非常卡，而且经常出现中断失败的情况，导致上传个代码可能要尝试好几次才行，后来发现好像是<code>github.global.ssl.fastly.net</code>这个被墙了，后来通过加了个host配置让找下面两个网址的时候直接跳到配置的IP上。</p><h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><ul><li><p>用管理员权限打开<code>hosts</code>文件，路径是<code>C:\Windows\System32\drivers\etc</code></p></li><li><p>在文件末尾添加下面两行：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">192.30.253.112 github.com</span><br><span class="line">151.101.185.194 github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure></li><li><p>刷新DNS缓存，在命令提示符（CMD）中执行命令 <code>ipconfig /flushdns</code> 即可</p></li></ul><h3 id="相关解释"><a href="#相关解释" class="headerlink" title="相关解释"></a>相关解释</h3><ul><li>hosts文件：主要包含了<strong>IP地址</strong>和<strong>对应网址</strong>的映射，当用户在浏览器输入这个网址时，OS会最先从hosts文件中找有没有这个网址对应的IP的记录，找不到的话回去通过DNS解析出对应的IP，所以有的话就省掉了走DNS这一步</li><li>上述的两个IP可能会变化，可以通过<a href="https://www.ipaddress.com/" target="_blank" rel="noopener">ipaddress.com</a>查一下</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      最近发现在使用git clone和push代码的时候非常卡，而且经常出现中断失败的情况，导致上传个代码可能要尝试好几次才行，后来发现好像是`github.global.ssl.fastly.net`这个被墙了，后来通过加了个host配置让找下面两个网址的时候直接跳到配置的IP上。
+    
+    </summary>
+    
+      <category term="工具" scheme="http://fdconsole.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="github 工具" scheme="http://fdconsole.com/tags/github-%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>vue中的flowtype--js静态类型检查工具</title>
@@ -34,9 +56,9 @@
       <category term="vue系列" scheme="http://fdconsole.com/categories/vue%E7%B3%BB%E5%88%97/"/>
     
     
-      <category term="flow" scheme="http://fdconsole.com/tags/flow/"/>
-    
       <category term="vue" scheme="http://fdconsole.com/tags/vue/"/>
+    
+      <category term="flow" scheme="http://fdconsole.com/tags/flow/"/>
     
   </entry>
   
@@ -202,9 +224,9 @@
       <category term="webpack" scheme="http://fdconsole.com/categories/webpack/"/>
     
     
-      <category term="webpack" scheme="http://fdconsole.com/tags/webpack/"/>
-    
       <category term="javascript" scheme="http://fdconsole.com/tags/javascript/"/>
+    
+      <category term="webpack" scheme="http://fdconsole.com/tags/webpack/"/>
     
   </entry>
   

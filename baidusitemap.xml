@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://fdconsole.com/2018/07/18/%E8%A7%A3%E5%86%B3github-clone%E5%92%8Cpush%E8%BF%87%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2018-07-18T15:34:40.417Z</lastmod>
+    <data>
+        <display>
+        <title>解决github clone和push过慢的问题</title>
+        <pubTime>2018-07-18T15:33:55.000Z</pubTime>
+        
+        <tag>github 工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="http://fdconsole.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://fdconsole.com/2018/07/13/vue%E4%B8%AD%E7%9A%84flowtype-js%E9%9D%99%E6%80%81%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2018-07-12T17:29:37.915Z</lastmod>
     <data>
@@ -11,9 +31,9 @@
         <title>vue中的flowtype--js静态类型检查工具</title>
         <pubTime>2018-07-12T17:11:16.000Z</pubTime>
         
-        <tag>flow</tag>
-         
         <tag>vue</tag>
+         
+        <tag>flow</tag>
          
          
            
@@ -167,9 +187,9 @@
         <title>【webpack】: 记一次jsbundle体积优化</title>
         <pubTime>2018-03-07T12:05:26.000Z</pubTime>
         
-        <tag>webpack</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>webpack</tag>
          
          
            
