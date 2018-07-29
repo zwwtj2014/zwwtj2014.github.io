@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fdconsole.com/"/>
-  <updated>2018-07-18T15:34:40.417Z</updated>
+  <updated>2018-07-29T15:31:51.672Z</updated>
   <id>http://fdconsole.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS小记：Flex布局的一些配置</title>
+    <link href="http://fdconsole.com/2018/07/29/CSS%E5%B0%8F%E8%AE%B0%EF%BC%9AFlex%E5%B8%83%E5%B1%80%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE/"/>
+    <id>http://fdconsole.com/2018/07/29/CSS小记：Flex布局的一些配置/</id>
+    <published>2018-07-29T15:26:05.000Z</published>
+    <updated>2018-07-29T15:31:51.672Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png" alt="&quot;[图片见参考一]&quot; img" title="[图片见参考一]"> </p><ul><li>设为Flex布局之后，子元素的<code>float</code>，<code>clear</code>, <code>vertical-align</code> 属性将失效</li><li>容器上有六个属性<ul><li>flex-direction：决定主轴方向。共四个值<ul><li>row(默认值)：主轴为水平方向，起点在左端</li><li>row-reverse：主轴为水平方向，起点在右端</li><li>column：主轴为垂直方向，起点在上沿</li><li>column-reverse：主轴为垂直方向，起点在下沿</li></ul></li><li>flex-wrap：定义如果一条轴线排不下，如何换行<ul><li>nowrap(默认值)：不换行</li><li>wrap：换行，第一行在上方</li><li>wrap-reverse：换行，第一行在下方</li></ul></li><li>flex-flow：是<code>flex-direction</code>和<code>flex-wrap</code>的简写形式</li><li>justify-content：定义了项目在主轴上的对齐方式<ul><li>flex-start(默认值)：左对齐</li><li>flex-end：右对齐</li><li>center：居中</li><li>space-between：两端对齐，项目之间的间隔相等</li><li>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边距的间隔大一倍</li></ul></li><li>align-items：定义了再交叉轴上如何对齐<ul><li>flex-start：交叉轴的起点（顶部）对齐</li><li>flex-end：交叉轴的终点（底部）对齐</li><li>center：交叉轴的中点对齐</li><li>baseline：项目的第一行文字的基线对齐</li><li>stretch(默认值)：如果项目未设置高度或设为auto，将占满整个容器的高度（拉伸效果）</li></ul></li><li>align-content：定义了多根轴线的对齐方式。如果项目只有一根轴线则该属性不生效</li></ul></li><li>项目上（子节点）六个属性<ul><li>order：定义项目的排列顺序，数值越小，排列越靠前，默认为0</li><li>flex-grow：定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大</li><li>flex-shrink：定义项目的缩小比例，默认为1，即如果空间不足，该项目将缩小</li><li>flex-basis：定义了分配多余空间之前，项目占据的主轴空间。</li><li>flex：是<code>flex-glow</code>, <code>flex-shrink</code>, <code>flex-basis</code>的简写，默认 <code>0 1 auto</code></li><li>align-self：允许单个项目有与其他项目不一样的对齐方式，可以覆盖align-items属性</li></ul></li></ul><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener">Flex 布局教程：语法篇</a></p><p><a href="http://static.vgee.cn/static/index.html" target="_blank" rel="noopener">Flex 布局示例</a></p>]]></content>
+    
+    <summary type="html">
+    
+      Flex布局的一些配置
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://fdconsole.com/categories/CSS/"/>
+    
+    
+      <category term="Flex布局" scheme="http://fdconsole.com/tags/Flex%E5%B8%83%E5%B1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>解决github clone和push过慢的问题</title>
@@ -128,9 +150,9 @@
       <category term="node" scheme="http://fdconsole.com/categories/node/"/>
     
     
-      <category term="node" scheme="http://fdconsole.com/tags/node/"/>
-    
       <category term="javascript" scheme="http://fdconsole.com/tags/javascript/"/>
+    
+      <category term="node" scheme="http://fdconsole.com/tags/node/"/>
     
   </entry>
   
