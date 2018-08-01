@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://fdconsole.com/2018/08/02/rollup%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2018-08-01T16:14:50.635Z</lastmod>
+    <data>
+        <display>
+        <title>rollup基础</title>
+        <pubTime>2018-08-01T16:08:45.000Z</pubTime>
+        
+        <tag>构建工具</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="http://fdconsole.com/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://fdconsole.com/2018/07/29/CSS%E5%B0%8F%E8%AE%B0%EF%BC%9AFlex%E5%B8%83%E5%B1%80%E7%9A%84%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2018-07-29T15:31:51.672Z</lastmod>
     <data>
@@ -207,9 +227,9 @@
         <title>【webpack】: 记一次jsbundle体积优化</title>
         <pubTime>2018-03-07T12:05:26.000Z</pubTime>
         
-        <tag>javascript</tag>
-         
         <tag>webpack</tag>
+         
+        <tag>javascript</tag>
          
          
            
