@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://fdconsole.com/2018/09/12/rollup%E5%9C%A8vue%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2018-09-11T16:03:03.199Z</lastmod>
+    <data>
+        <display>
+        <title>rollup在vue中的使用</title>
+        <pubTime>2018-09-11T16:01:34.000Z</pubTime>
+        
+        <tag>vue rollup</tag>
+         
+         
+           
+             
+              <breadCrumb title="vue" url="http://fdconsole.com/categories/vue/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://fdconsole.com/2018/08/02/rollup%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2018-08-01T16:14:50.635Z</lastmod>
     <data>
@@ -227,9 +247,9 @@
         <title>【webpack】: 记一次jsbundle体积优化</title>
         <pubTime>2018-03-07T12:05:26.000Z</pubTime>
         
-        <tag>webpack</tag>
-         
         <tag>javascript</tag>
+         
+        <tag>webpack</tag>
          
          
            
